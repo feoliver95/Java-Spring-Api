@@ -55,17 +55,26 @@
 		</dependency>
 		
 		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-jpa</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		
+		
+		
+		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
 		
+
 		<dependency>
-			
 			<groupId>com.h2database</groupId>
-			<artifactId>com.h2database</artifactId>
+			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		
 		
 		
 	</dependencies>
@@ -86,6 +95,13 @@
 			<name>Spring Milestones</name>
 			<url>https://repo.spring.io/milestone</url>
 		</repository>
+
+		<repository>
+			<id>spring-libs-release</id>
+			<name>Spring Releases</name>
+			<url>https://repo.spring.io/libs-release</url>
+		</repository>
+
 		<repository>
 			<id>spring-snapshots</id>
 			<name>Spring Snapshots</name>
