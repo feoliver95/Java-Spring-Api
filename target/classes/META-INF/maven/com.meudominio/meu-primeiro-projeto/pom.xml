@@ -24,6 +24,18 @@
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 		
+		 <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-validator</artifactId>
+      <version>5.0.3.Final</version>
+      <exclusions>
+          <exclusion>
+              <groupId>javax.validation</groupId>
+              <artifactId>validation-api</artifactId>
+          </exclusion>
+      </exclusions>
+  </dependency>
+		
 
 <dependency>
    <groupId>javax</groupId>
@@ -120,6 +132,11 @@
 
 
 	<repositories>
+	 <repository>
+        <id>spring-releases</id>
+        <url>https://repo.spring.io/libs-release</url>
+    </repository>
+	
 		<repository>
 			<id>spring-milestones</id>
 			<name>Spring Milestones</name>
@@ -154,7 +171,15 @@
 			<snapshots>
 				<enabled>true</enabled>
 			</snapshots>
+			
+			
 		</pluginRepository>
+		    <pluginRepository>
+        <id>spring-releases</id>
+        <url>https://repo.spring.io/libs-release</url>
+    </pluginRepository>
+    
+    
 	</pluginRepositories>
 
 </project>
